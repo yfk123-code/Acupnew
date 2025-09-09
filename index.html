@@ -4,72 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading Your Match...</title>
-    <meta name="monetag" content="f2af0a2360711f512a62d8d460aa36d0">
-    <!-- 1. टेलीग्राम की स्क्रिप्ट जोड़ी गई -->
+    <!-- 1. Monetag का नया मुख्य SDK कोड -->
+    <script src='//libtl.com/sdk.js' data-zone='9849504' data-sdk='show_9849504'></script>
+    
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
+        /* CSS कोड में कोई बदलाव नहीं */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: #0d1137;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 1rem;
-        }
-        .container {
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #ffca28;
-            margin-bottom: 1.5rem;
-        }
-        .ad-placeholder {
-            background-color: rgba(0,0,0,0.2);
-            border: 2px dashed #3a478f;
-            padding: 1rem;
-            color: #aeb8f1;
-            border-radius: 15px;
-            margin: 1.5rem 0;
-            min-height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        .timer-container p {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        .timer-container span {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #ffca28;
-        }
-        #actionButton {
-            background-color: #ffca28;
-            color: #0d1137;
-            border: none;
-            padding: 1rem 3rem;
-            font-size: 1.2rem;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
-            text-transform: uppercase;
-            display: none;
-            transition: transform 0.2s;
-            margin-top: 1.5rem;
-        }
-        #actionButton:hover {
-            transform: scale(1.05);
-        }
+        body{font-family:'Poppins',sans-serif;margin:0;background-color:#0d1137;color:white;display:flex;justify-content:center;align-items:center;height:100vh;text-align:center;padding:1rem}.container{max-width:600px;width:100%}h1{font-size:2rem;font-weight:700;color:#ffca28;margin-bottom:1.5rem}.ad-placeholder{background-color:rgba(0,0,0,0.2);border:2px dashed #3a478f;padding:1rem;color:#aeb8f1;border-radius:15px;margin:1.5rem 0;min-height:100px;display:flex;justify-content:center;align-items:center;overflow:hidden}.timer-container p{font-size:1.2rem;margin-bottom:1rem}.timer-container span{font-size:3rem;font-weight:700;color:#ffca28}#actionButton{background-color:#ffca28;color:#0d1137;border:none;padding:1rem 3rem;font-size:1.2rem;font-weight:700;border-radius:50px;cursor:pointer;text-transform:uppercase;display:none;transition:transform .2s;margin-top:1.5rem}#actionButton:hover{transform:scale(1.05)}
     </style>
 </head>
 <body>
@@ -77,20 +19,24 @@
         <h1>Generating Your Secure Link...</h1>
 
         <div class="ad-placeholder">
-            <!-- Monetag का In-Page Push या Vignette Banner यहाँ लगाएँ -->
-            <p>Advertisement 1</p>
+             <!-- Adsterra का 300x250 Banner यहाँ लगा रहेगा -->
+             <script type="text/javascript">
+                atOptions = {
+                    'key' : '6cd7e1423950edae05036677c78ed6b5',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/6cd7e1423950edae05036677c78ed6b5/invoke.js"></script>
         </div>
-
+        
         <div class="timer-container" id="timerContainer">
             <p>Please wait for <span id="countdown">15</span> seconds</p>
         </div>
         
         <button id="actionButton" onclick="goToMatch()">Go To Live Match</button>
-
-        <div class="ad-placeholder">
-             <!-- Adsterra का 300x250 Banner यहाँ लगाएँ -->
-             <p>Advertisement 2</p>
-        </div>
     </div>
 
     <script>
@@ -107,12 +53,18 @@
                 clearInterval(interval);
                 timerContainer.style.display = 'none';
                 actionButton.style.display = 'inline-block';
+                
+                // 2. टाइमर खत्म होने पर Monetag का In-App Interstitial विज्ञापन दिखाएँ
+                if (typeof show_9849504 === 'function') {
+                    show_9849504({
+                      type: 'inApp',
+                      inAppSettings: { frequency: 2, capping: 0.1, interval: 30, timeout: 5, everyPage: false }
+                    });
+                }
             }
         }, 1000);
 
-        // 2. फंक्शन को मिनी ऐप के लिए अपडेट किया गया
         function goToMatch() {
-            // यह मौजूदा टैब को match.html पर ले जाएगा
             window.location.href = "match.html";
         }
     </script>
