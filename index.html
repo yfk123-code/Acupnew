@@ -229,7 +229,7 @@
 
         async function fetchMatchData() {
             try {
-                const response = await fetch(GITHUB_URL);
+                const response = await fetch(`${GITHUB_URL}?v=${new Date().getTime()}`);
                 const data = await response.json();
                 
                 // Update UI with fetched data
