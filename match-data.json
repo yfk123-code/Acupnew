@@ -1,10 +1,10 @@
 {
   "matchTitle": "DP WORLD ASIA CUP 2025 ",
-  "teamA": "AFGHANISTAN",
-  "teamA_flag": "https://i.postimg.cc/FHMtQHBq/Afghanistan.png",
-  "teamB": "Hong Kong",
-  "teamB_flag": "https://i.postimg.cc/2y8Mxb1q/hongkong.png",
+  "teamA": "India",
+  "teamA_flag": "https://i.postimg.cc/X75mkbJk/India.png",
+  "teamB": "UAE",
+  "teamB_flag": "https://i.postimg.cc/4xb0jQpK/uae.png",
   "matchTime": "2025-09-09T19:00:00+05:30",
-  "matchVenue": "Zayed Cricket Stadium, Abu Dhabi",
+  "matchVenue": "Dubai International Stadium",
   "videoUrl": "https://dai.google.com/linear/hls/event/2uQvHqZySCSh8lOGkJ1R-A/master.m3u8"
 }
