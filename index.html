@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Your Match...</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #0d1137;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffca28;
+            margin-bottom: 1.5rem;
+        }
+        .ad-placeholder {
+            background-color: rgba(0,0,0,0.2);
+            border: 2px dashed #3a478f;
+            padding: 2rem 1rem;
+            color: #aeb8f1;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .timer-container p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .timer-container span {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffca28;
+        }
+        #actionButton {
+            background-color: #ffca28;
+            color: #0d1137;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            display: none; /* Hidden by default */
+            transition: transform 0.2s;
+            margin-top: 1.5rem;
+        }
+        #actionButton:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generating Your Secure Link...</h1>
+
+        <div class="ad-placeholder">
+            <!-- Adsterra Banner Ad Code Here -->
+            <p>Advertisement</p>
+        </div>
+
+        <div class="timer-container" id="timerContainer">
+            <p>Please wait for <span id="countdown">15</span> seconds</p>
+        </div>
+
+        <a href="match.html" id="actionButton">Go To Live Match</a>
+
+        <div class="ad-placeholder">
+             <!-- Another Adsterra Banner Ad Code Here -->
+             <p>Advertisement</p>
+        </div>
+    </div>
+
+    <script>
+        const countdownElement = document.getElementById('countdown');
+        const timerContainer = document.getElementById('timerContainer');
+        const actionButton = document.getElementById('actionButton');
+        let seconds = 15;
+
+        const interval = setInterval(() => {
+            seconds--;
+            countdownElement.innerText = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(interval);
+                timerContainer.style.display = 'none';
+                actionButton.style.display = 'inline-block';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
