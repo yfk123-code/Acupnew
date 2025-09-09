@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading Your Match...</title>
     <meta name="monetag" content="f2af0a2360711f512a62d8d460aa36d0">
+    <!-- 1. टेलीग्राम की स्क्रिप्ट जोड़ी गई -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
         body {
@@ -32,7 +34,7 @@
         .ad-placeholder {
             background-color: rgba(0,0,0,0.2);
             border: 2px dashed #3a478f;
-            padding: 1rem; /* Padding adjusted for ads */
+            padding: 1rem;
             color: #aeb8f1;
             border-radius: 15px;
             margin: 1.5rem 0;
@@ -40,7 +42,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden; /* Prevents ads from overflowing */
+            overflow: hidden;
         }
         .timer-container p {
             font-size: 1.2rem;
@@ -61,7 +63,7 @@
             border-radius: 50px;
             cursor: pointer;
             text-transform: uppercase;
-            display: none; /* Hidden by default */
+            display: none;
             transition: transform 0.2s;
             margin-top: 1.5rem;
         }
@@ -75,34 +77,22 @@
         <h1>Generating Your Secure Link...</h1>
 
         <div class="ad-placeholder">
-            <!-- आपका पहला विज्ञापन कोड यहाँ सुरक्षित है -->
-            <script data-cfasync="false" type="text/javascript" src="//shaiwourtijogno.net/401/9848822/1"></script>
+            <!-- Monetag का In-Page Push या Vignette Banner यहाँ लगाएँ -->
+            <p>Advertisement 1</p>
         </div>
 
         <div class="timer-container" id="timerContainer">
             <p>Please wait for <span id="countdown">15</span> seconds</p>
         </div>
         
-        <!-- === यह बटन अपडेट किया गया है === -->
         <button id="actionButton" onclick="goToMatch()">Go To Live Match</button>
-        <!-- ============================== -->
 
         <div class="ad-placeholder">
-            <!-- आपका दूसरा विज्ञापन कोड यहाँ सुरक्षित है -->
-            <script type="text/javascript">
-                atOptions = {
-                    'key' : '6cd7e1423950edae05036677c78ed6b5',
-                    'format' : 'iframe',
-                    'height' : 250,
-                    'width' : 300,
-                    'params' : {}
-                };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/6cd7e1423950edae05036677c78ed6b5/invoke.js"></script>
+             <!-- Adsterra का 300x250 Banner यहाँ लगाएँ -->
+             <p>Advertisement 2</p>
         </div>
     </div>
 
-    <!-- === यह स्क्रिप्ट अपडेट की गई है === -->
     <script>
         const countdownElement = document.getElementById('countdown');
         const timerContainer = document.getElementById('timerContainer');
@@ -120,22 +110,11 @@
             }
         }, 1000);
 
-        // यह नया फंक्शन Direct Link की समस्या को ठीक करता है
+        // 2. फंक्शन को मिनी ऐप के लिए अपडेट किया गया
         function goToMatch() {
-            // 1. आपका Adsterra Direct Link
-            const adLink = "https://www.revenuecpmgate.com/d83qd22e?key=3c64b7ac4049765994761307cf0bbca0";
-
-            // 2. यह विज्ञापन को नए टैब में खोलेगा
-            window.open(adLink, '_blank');
-
-            // 3. यह मौजूदा टैब को match.html पर ले जाएगा
+            // यह मौजूदा टैब को match.html पर ले जाएगा
             window.location.href = "match.html";
         }
     </script>
-    <!-- ================================= -->
-
-    <!-- आपका Monetag Onclick (Popunder) कोड यहाँ सुरक्षित है -->
-    <script data-cfasync="false" type="text/javascript" src="//madurird.com/tag.min.js?z=9848792"></script>
-
 </body>
 </html>
