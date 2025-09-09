@@ -223,7 +223,7 @@
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script>
         // REPLACE THIS URL with the Raw URL of your GitHub JSON file
-        const GITHUB_URL = 'https://raw.githubusercontent.com/your-username/your-repository/main/match-data.json';
+        const GITHUB_URL = 'https://raw.githubusercontent.com/yfk123-code/Acupnew/main/match-data.json';
 
         let videoUrl = '';
 
