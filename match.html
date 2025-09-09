@@ -4,302 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DP World Asia Cup 2025 - Live Stream</title>
-    <meta name="monetag" content="f2af0a2360711f512a62d8d460aa36d0">
-    <!-- 1. टेलीग्राम की स्क्रिप्ट जोड़ी गई -->
+    <!-- 1. Monetag का नया मुख्य SDK कोड -->
+    <script src='//libtl.com/sdk.js' data-zone='9849504' data-sdk='show_9849504'></script>
+
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: #0d1137;
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-        }
-
-        .match-card {
-            background: linear-gradient(145deg, #1a237e, #0d1137);
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 1.5rem;
-        }
-
-        .match-card h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin: 0;
-            color: #ffca28;
-            text-transform: uppercase;
-        }
-
-        .teams {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 2rem 0;
-        }
-        
-        .team {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 40%;
-        }
-
-        .team img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        .team h2 {
-            font-size: 1.1rem;
-            margin-top: 1rem;
-            font-weight: 600;
-        }
-        
-        .vs {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #ffca28;
-        }
-        
-        .match-info {
-            font-size: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .countdown > div {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 0.8rem 1.2rem;
-            border-radius: 10px;
-        }
-
-        .countdown span {
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-        
-        .countdown p {
-            margin: 0;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-        }
-
-        #watchBtn {
-            background-color: #ffca28;
-            color: #0d1137;
-            border: none;
-            padding: 1rem 3rem;
-            font-size: 1.2rem;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
-            text-transform: uppercase;
-            display: none;
-            transition: transform 0.2s;
-        }
-
-        #watchBtn:hover {
-            transform: scale(1.05);
-        }
-
-        .video-section {
-            display: none;
-            margin-bottom: 1.5rem;
-            background: #000;
-            border-radius: 20px;
-            padding: 1rem;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            background-color: #000;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        .video-js {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .ad-placeholder {
-            background-color: #1c234d;
-            border: 2px dashed #3a478f;
-            padding: 1rem;
-            text-align: center;
-            color: #aeb8f1;
-            border-radius: 15px;
-            margin-bottom: 1.5rem;
-            min-height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
+        /* CSS कोड में कोई बदलाव नहीं */
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body{font-family:'Poppins',sans-serif;margin:0;background-color:#0d1137;color:white;display:flex;justify-content:center;padding:1rem}.container{width:100%;max-width:800px}.match-card{background:linear-gradient(145deg,#1a237e,#0d1137);border-radius:20px;padding:2rem;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.1);margin-bottom:1.5rem}.match-card h1{font-size:1.5rem;font-weight:600;margin:0;color:#ffca28;text-transform:uppercase}.teams{display:flex;justify-content:space-around;align-items:center;margin:2rem 0}.team{display:flex;flex-direction:column;align-items:center;width:40%}.team img{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid white;box-shadow:0 4px 10px rgba(0,0,0,.2)}.team h2{font-size:1.1rem;margin-top:1rem;font-weight:600}.vs{font-size:1.5rem;font-weight:700;color:#ffca28}.match-info{font-size:1rem;margin-bottom:2rem}.countdown{display:flex;justify-content:center;gap:1rem}.countdown>div{background-color:rgba(255,255,255,.1);padding:.8rem 1.2rem;border-radius:10px}.countdown span{display:block;font-size:2rem;font-weight:700}.countdown p{margin:0;font-size:.8rem;text-transform:uppercase}#watchBtn{background-color:#ffca28;color:#0d1137;border:none;padding:1rem 3rem;font-size:1.2rem;font-weight:700;border-radius:50px;cursor:pointer;text-transform:uppercase;display:none;transition:transform .2s}#watchBtn:hover{transform:scale(1.05)}.video-section{display:none;margin-bottom:1.5rem;background:#000;border-radius:20px;padding:1rem}.video-container{position:relative;padding-bottom:56.25%;height:0;background-color:#000;border-radius:15px;overflow:hidden}.video-js{position:absolute;top:0;left:0;width:100%;height:100%}.ad-placeholder{background-color:#1c234d;border:2px dashed #3a478f;padding:1rem;text-align:center;color:#aeb8f1;border-radius:15px;margin-bottom:1.5rem;min-height:90px;display:flex;justify-content:center;align-items:center;overflow:hidden}
     </style>
 </head>
 <body>
-
     <div class="container">
         
         <div class="match-card">
             <h1 id="matchTitle">Loading Match Details...</h1>
             <div class="teams">
-                <div class="team">
-                    <img id="teamA_flag" src="" alt="Team A Flag">
-                    <h2 id="teamA_name">Team A</h2>
-                </div>
+                <div class="team"><img id="teamA_flag" src="" alt="Team A Flag"><h2 id="teamA_name">Team A</h2></div>
                 <div class="vs">VS</div>
-                <div class="team">
-                    <img id="teamB_flag" src="" alt="Team B Flag">
-                    <h2 id="teamB_name">Team B</h2>
-                </div>
+                <div class="team"><img id="teamB_flag" src="" alt="Team B Flag"><h2 id="teamB_name">Team B</h2></div>
             </div>
-            <div class="match-info">
-                <p id="matchVenueAndTime">Loading...</p>
-            </div>
-            
+            <div class="match-info"><p id="matchVenueAndTime">Loading...</p></div>
             <div id="countdown" class="countdown">
                 <div><span id="days">00</span><p>Days</p></div>
                 <div><span id="hours">00</span><p>Hrs</p></div>
                 <div><span id="minutes">00</span><p>Mins</p></div>
                 <div><span id="seconds">00</span><p>Secs</p></div>
             </div>
-
             <button id="watchBtn">Watch Live</button>
         </div>
 
         <div class="video-section" id="videoSection">
-            <div id="playerContainer" class="video-container">
-                <!-- Video.js player will be injected here -->
-            </div>
+            <div id="playerContainer" class="video-container"></div>
         </div>
-
-        <div class="ad-placeholder">
-            <!-- Monetag In-Page Push या Vignette Banner यहाँ लगाएँ -->
-             <script data-cfasync="false" type="text/javascript" src="//shaiwourtijogno.net/401/9848822/1"></script>
-        </div>
-
     </div>
 
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script>
         const GITHUB_URL = 'https://raw.githubusercontent.com/yfk123-code/Acupnew/main/match-data.json';
         let videoUrl = '';
-
-        async function fetchMatchData() {
-            try {
-                const response = await fetch(`${GITHUB_URL}?v=${new Date().getTime()}`);
-                const data = await response.json();
-                
-                document.getElementById('matchTitle').innerText = data.matchTitle;
-                document.getElementById('teamA_name').innerText = data.teamA;
-                document.getElementById('teamA_flag').src = data.teamA_flag;
-                document.getElementById('teamB_name').innerText = data.teamB;
-                document.getElementById('teamB_flag').src = data.teamB_flag;
-                
-                const matchDate = new Date(data.matchTime);
-                document.getElementById('matchVenueAndTime').innerText = `${matchDate.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })} - ${matchDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}, ${data.matchVenue}`;
-
-                videoUrl = data.videoUrl;
-                startCountdown(data.matchTime);
-
-            } catch (error) {
-                console.error('Error fetching match data:', error);
-                document.getElementById('matchVenueAndTime').innerText = 'Failed to load match data. Please try again later.';
-            }
-        }
-
-        function startCountdown(targetTime) {
-            const countdownElement = document.getElementById('countdown');
-            const watchBtn = document.getElementById('watchBtn');
-            const targetDate = new Date(targetTime).getTime();
-
-            const interval = setInterval(() => {
-                const now = new Date().getTime();
-                const distance = targetDate - now;
-
-                if (distance < 0) {
-                    clearInterval(interval);
-                    countdownElement.style.display = 'none';
-                    watchBtn.style.display = 'inline-block';
-                    return;
-                }
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-                document.getElementById('days').innerText = String(days).padStart(2, '0');
-                document.getElementById('hours').innerText = String(hours).padStart(2, '0');
-                document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
-                document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
-            }, 1000);
-        }
-
+        async function fetchMatchData(){try{const response=await fetch(`${GITHUB_URL}?v=${new Date().getTime()}`);const data=await response.json();document.getElementById('matchTitle').innerText=data.matchTitle;document.getElementById('teamA_name').innerText=data.teamA;document.getElementById('teamA_flag').src=data.teamA_flag;document.getElementById('teamB_name').innerText=data.teamB;document.getElementById('teamB_flag').src=data.teamB_flag;const matchDate=new Date(data.matchTime);document.getElementById('matchVenueAndTime').innerText=`${matchDate.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})} - ${matchDate.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:true})}, ${data.matchVenue}`;videoUrl=data.videoUrl;startCountdown(data.matchTime)}catch(error){console.error('Error fetching match data:',error);document.getElementById('matchVenueAndTime').innerText='Failed to load match data. Please try again later.'}}
+        function startCountdown(targetTime){const countdownElement=document.getElementById('countdown');const watchBtn=document.getElementById('watchBtn');const targetDate=new Date(targetTime).getTime();const interval=setInterval(()=>{const now=new Date().getTime();const distance=targetDate-now;if(distance<0){clearInterval(interval);countdownElement.style.display='none';watchBtn.style.display='inline-block';return}
+        const days=Math.floor(distance/(1000*60*60*24));const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));const minutes=Math.floor((distance%(1000*60*60))/(1000*60));const seconds=Math.floor((distance%(1000*60))/1000);document.getElementById('days').innerText=String(days).padStart(2,'0');document.getElementById('hours').innerText=String(hours).padStart(2,'0');document.getElementById('minutes').innerText=String(minutes).padStart(2,'0');document.getElementById('seconds').innerText=String(seconds).padStart(2,'0')},1000)}
+        
         document.getElementById('watchBtn').addEventListener('click', () => {
+             // 2. "Watch Live" पर क्लिक करने पर Monetag का In-App Interstitial विज्ञापन दिखाएँ
+            if (typeof show_9849504 === 'function') {
+                show_9849504({
+                  type: 'inApp',
+                  inAppSettings: { frequency: 2, capping: 0.1, interval: 30, timeout: 5, everyPage: false }
+                });
+            }
+            startVideoPlayer(); // विज्ञापन के साथ ही वीडियो शुरू कर दें
+        });
+
+        function startVideoPlayer() {
             const videoSection = document.getElementById('videoSection');
             videoSection.style.display = 'block';
             loadVideoPlayer(videoUrl);
             videoSection.scrollIntoView({ behavior: 'smooth' });
-        });
-        
-        function loadVideoPlayer(url) {
-            const playerContainer = document.getElementById('playerContainer');
-            playerContainer.innerHTML = '';
-
-            if (url.toLowerCase().includes('<iframe')) {
-                playerContainer.innerHTML = url;
-                const iframe = playerContainer.querySelector('iframe');
-                if (iframe) {
-                    iframe.style.width = '100%';
-                    iframe.style.height = '100%';
-                    iframe.style.position = 'absolute';
-                }
-            } else {
-                playerContainer.innerHTML = `<video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" data-setup='{"fluid": true}'></video>`;
-                const player = videojs('my-video');
-                
-                if (url.toLowerCase().endsWith('.m3u8')) {
-                    player.src({ src: url, type: 'application/x-mpegURL' });
-                } else {
-                    player.src({ src: url, type: 'video/mp4' });
-                }
-                player.play();
-            }
         }
-
-        document.addEventListener('DOMContentLoaded', fetchMatchData);
+        
+        function loadVideoPlayer(url){const playerContainer=document.getElementById('playerContainer');playerContainer.innerHTML='';if(url.toLowerCase().includes('<iframe')){playerContainer.innerHTML=url;const iframe=playerContainer.querySelector('iframe');if(iframe){iframe.style.width='100%';iframe.style.height='100%';iframe.style.position='absolute'}}else{playerContainer.innerHTML=`<video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" data-setup='{"fluid": true}'></video>`;const player=videojs('my-video');if(url.toLowerCase().endsWith('.m3u8')){player.src({src:url,type:'application/x-mpegURL'})}else{player.src({src:url,type:'video/mp4'})}
+        player.play()}}
+        document.addEventListener('DOMContentLoaded',fetchMatchData);
     </script>
     
     <!-- Adsterra Social Bar -->
