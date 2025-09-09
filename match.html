@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DP World Asia Cup 2025 - Live Stream</title>
     <meta name="monetag" content="f2af0a2360711f512a62d8d460aa36d0">
+    <!-- 1. टेलीग्राम की स्क्रिप्ट जोड़ी गई -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
@@ -116,7 +118,7 @@
             border-radius: 50px;
             cursor: pointer;
             text-transform: uppercase;
-            display: none; /* Hidden by default */
+            display: none;
             transition: transform 0.2s;
         }
 
@@ -125,7 +127,7 @@
         }
 
         .video-section {
-            display: none; /* Hidden by default */
+            display: none;
             margin-bottom: 1.5rem;
             background: #000;
             border-radius: 20px;
@@ -203,8 +205,8 @@
         </div>
 
         <div class="ad-placeholder">
-            <!-- Monetag Vignette Banner -->
-            <script data-cfasync="false" type="text/javascript" src="//shaiwourtijogno.net/401/9848822/1"></script>
+            <!-- Monetag In-Page Push या Vignette Banner यहाँ लगाएँ -->
+             <script data-cfasync="false" type="text/javascript" src="//shaiwourtijogno.net/401/9848822/1"></script>
         </div>
 
     </div>
@@ -216,7 +218,6 @@
 
         async function fetchMatchData() {
             try {
-                // === YEH LINE UPDATE KI GAYI HAI (Caching ko rokne ke liye) ===
                 const response = await fetch(`${GITHUB_URL}?v=${new Date().getTime()}`);
                 const data = await response.json();
                 
