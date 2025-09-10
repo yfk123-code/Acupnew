@@ -6,5 +6,11 @@
   "teamB_flag": "https://i.postimg.cc/4xb0jQpK/uae.png",
   "matchTime": "2025-09-10T19:00:00+05:30",
   "matchVenue": "Dubai International Stadium",
-  "videoUrl": "https://in-mc-fdlive.fancode.com/mumbai/136732_english_hls_877e5c48d829506ta-di_h264/240p.m3u8"
+  "videoUrl": "<iframe src="https://v5on.site/PROXIMITY/play.html?url=https://dai.google.com/linear/hls/event/bm4t4V2URjS9I8O8mxnJUg/master.m3u8" 
+        width="800" 
+        height="600" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+"
 }
