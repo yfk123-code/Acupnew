@@ -2,9 +2,9 @@
   "matchTitle": "DP WORLD ASIA CUP 2025",
   "teamA": "Bangladesh",
   "teamA_flag": "https://i.postimg.cc/wjmqNZKC/Bangladesh.png",
-  "teamB": "HongKong",
-  "teamB_flag": "https://i.postimg.cc/2y8Mxb1q/hong-kong.png",
-  "matchTime": "2025-09-11T19:00:00+05:30",
+  "teamB": "Sri Lanka",
+  "teamB_flag": "https://i.postimg.cc/R0xMLd4N/sri-lanka.png",
+  "matchTime": "2025-09-13T19:00:00+05:30",
   "matchVenue": "Dubai International Stadium",
-  "videoUrl": "<iframe src='https://v5on.site/PROXIMITY/play.html?url=https://dai.google.com/linear/hls/event/inq9igrMQ32gRZqcAKG_3w/master.m3u8' width='100%' height='500' frameborder='0' allowfullscreen></iframe>"
+  "videoUrl": "https://tataplay.slivcdn.com/hls/live/2011747-b/TEN1HD/hdntl=exp=1752224858~acl=%2f*~id=1c90cfdf-41fb-46ee-9001-e65e7e3eaf3c~data=hdntl~hmac=bf7104c0ffac89533557334050bb6d10c8e957018114c87cabce14f92f10f4dd/master_1300.m3u8"
 }
