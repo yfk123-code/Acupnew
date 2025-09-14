@@ -6,16 +6,5 @@
   "teamB_flag": "https://i.postimg.cc/7L5gSxPx/Pakistan.png",
   "matchTime": "2025-09-14T19:00:00+05:30",
   "matchVenue": "Dubai International Stadium",
-  "videoUrl": "<iframe
-    src="https://cricxbig.pages.dev/?id=Asia"
-    style="border:0px #ffffff none;"
-    name="myiFrame"
-    scrolling="no"
-    frameborder="0"
-    marginheight="0px"
-    marginwidth="0px"
-    height="400px"
-    width="100%"
-    allowfullscreen>
-</iframe>"
+  "videoUrl": "<iframe src=\"https://cricxbig.pages.dev/?id=Asia\" style=\"border:0px #ffffff none;\" name=\"myiFrame\" scrolling=\"no\" frameborder=\"0\" marginheight=\"0px\" marginwidth=\"0px\" height=\"400px\" width=\"100%\" allowfullscreen></iframe>"
 }
