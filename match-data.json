@@ -6,5 +6,16 @@
   "teamB_flag": "https://i.postimg.cc/7L5gSxPx/Pakistan.png",
   "matchTime": "2025-09-14T19:00:00+05:30",
   "matchVenue": "Dubai International Stadium",
-  "videoUrl": "https://tataplay.slivcdn.com/hls/live/2011747-b/TEN1HD/hdntl=exp=1752224858~acl=%2f*~id=1c90cfdf-41fb-46ee-9001-e65e7e3eaf3c~data=hdntl~hmac=bf7104c0ffac89533557334050bb6d10c8e957018114c87cabce14f92f10f4dd/master_1300.m3u8"
+  "videoUrl": "<iframe
+    src="https://cricxbig.pages.dev/?id=Asia"
+    style="border:0px #ffffff none;"
+    name="myiFrame"
+    scrolling="no"
+    frameborder="0"
+    marginheight="0px"
+    marginwidth="0px"
+    height="400px"
+    width="100%"
+    allowfullscreen>
+</iframe>a=hdntl~hmac=bf7104c0ffac89533557334050bb6d10c8e957018114c87cabce14f92f10f4dd/master_1300.m3u8"
 }
